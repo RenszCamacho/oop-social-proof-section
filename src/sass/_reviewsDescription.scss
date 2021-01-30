@@ -1,0 +1,137 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: {
+    image: url(../imges/bg-pattern-top-mobile.svg);
+    // url(../imges/bg-pattern-bottom-mobile.svg);
+    repeat: no-repeat, no-repeat;
+  }
+
+  @include rwd(large) {
+    background: {
+      image: url(../imges/bg-pattern-top-desktop.svg),
+        url(../imges/bg-pattern-bottom-desktop.svg);
+      repeat: no-repeat, no-repeat;
+      position: 15% 0%, 60% 100%;
+    }
+  }
+}
+
+.reviews {
+  margin: 7rem 2.9rem 10rem;
+
+  @include rwd(large) {
+    width: 90%;
+    margin: 7rem 2.9rem;
+  }
+
+  @include rwd(xxlarge) {
+    max-width: 112.4rem;
+  }
+
+  &__description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3.1rem;
+
+    @include rwd(large) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      text-align: start;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+
+    @include rwd(large) {
+      width: 40%;
+      animation: fadeInDown 1s;
+    }
+  }
+
+  &__title {
+    color: var(--p-very-dark-magenta);
+    font-size: 3.1rem;
+    font-weight: 700;
+    padding: 2rem 3.2rem;
+
+    @include rwd(large) {
+      padding: 0 0 1rem 0;
+      font-size: 4.6rem;
+    }
+  }
+
+  &__paragraph {
+    color: var(--s-dark-grayish-magenta);
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+
+    @include rwd(xxlarge) {
+      margin-right: 0.3rem;
+    }
+  }
+
+  &__rate {
+    width: 85vw;
+    background-color: var(--s-light-grayish-magenta);
+    padding: 1.5rem 5.6rem;
+    margin-bottom: 1.8rem;
+    border-radius: 0.8rem;
+
+    @include rwd(large) {
+      width: 44.1rem;
+      height: 5.6rem;
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 0;
+    }
+  }
+
+  &__rate--first {
+    @include rwd(large) {
+      animation: fadeInRight 1s;
+    }
+  }
+
+  &__rate--second {
+    @include rwd(large) {
+      margin-left: 5rem;
+      animation: fadeInRight 1.5s;
+    }
+  }
+
+  &__rate--third {
+    @include rwd(large) {
+      margin-left: 10rem;
+      animation: fadeInRight 2s;
+    }
+  }
+
+  &__rateStars {
+    margin-bottom: 1rem;
+
+    @include rwd(large) {
+      margin-bottom: 0;
+      padding: 0 3rem;
+    }
+  }
+
+  &__rateImg {
+    padding: 0 0.25rem;
+  }
+
+  &__rateDescription {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--p-very-dark-magenta);
+  }
+}

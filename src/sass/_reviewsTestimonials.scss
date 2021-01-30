@@ -1,0 +1,96 @@
+.reviews {
+  &__testimonials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include rwd(large) {
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__cards {
+    padding: 3.5rem 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    background-color: var(--p-very-dark-magenta);
+    width: 85vw;
+
+    @include rwd(large) {
+      width: 32%;
+      // height: 25.8rem;
+      margin: 0;
+    }
+  }
+
+  &__cards--one {
+    @include rwd(large) {
+      animation: fadeInUp 1s;
+    }
+  }
+
+  &__cards--two {
+    @include rwd(large) {
+      margin-top: 3rem;
+      animation: fadeInUp 1.5s;
+    }
+  }
+
+  &__cards--three {
+    @include rwd(large) {
+      margin-top: 6rem;
+      animation: fadeInUp 2s;
+    }
+  }
+
+  &__cardWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  &__cardsImg {
+    border-radius: 50%;
+    max-width: 4rem;
+  }
+
+  &__name {
+    margin-left: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  &__subtitle,
+  &__cardDescription {
+    color: var(--s-white);
+  }
+
+  &__subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  &__cardVerify {
+    color: var(--p-soft-pink);
+    font-size: 1.3rem;
+  }
+
+  &__cardDescription {
+    font-size: 1.29rem;
+    line-height: 2.3rem;
+    font-weight: 400;
+    padding: 1px;
+
+    &::before {
+      content: "\201C";
+    }
+
+    &::after {
+      content: "\201D";
+    }
+  }
+}

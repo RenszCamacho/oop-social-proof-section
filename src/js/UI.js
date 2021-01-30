@@ -1,127 +1,6 @@
 class UI {
-  renderDescription(e) {
-    const root = document.getElementById("root"),
-      div = document.createElement("div");
-    div.className = "reviews__description";
-    div.innerHTML = `
-          <div class="reviews__text">
-            <h1 class="reviews__title">
-              10,000+ of our user love our products.
-            </h1>
-
-            <p class="reviews__paragraph">
-              We only provide great products combined with excellent customer
-              service. See what our satisfied customer are saying about our
-              service.
-            </p>
-          </div>
-
-          <div class="reviews__ratesWrap">
-            <div class="reviews__rate reviews__rate--first">
-              <div class="reviews__rateStars">
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-              </div>
-              <span class="reviews__rateDescription"
-                >Rated 5 Stars in Reviews</span
-              >
-            </div>
-
-            <div class="reviews__rate reviews__rate--second">
-              <div class="reviews__rateStars">
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-              </div>
-              <span class="reviews__rateDescription"
-                >Rated 5 Stars in Report Guru</span
-              >
-            </div>
-
-            <div class="reviews__rate reviews__rate--third">
-              <div class="reviews__rateStars">
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-                <img
-                  src="./imges/icon-star.svg"
-                  alt="icon-star"
-                  class="reviews__rateImg"
-                />
-              </div>
-              <span class="reviews__rateDescription"
-                >Rated 5 Stars in BestTech</span
-              >
-            </div>
-          </div>
-    `;
-    root.appendChild(div);
-  }
-
-  renderArtticles(e) {
-    const root = document.getElementById("root"),
+  render(user1, user2, user3) {
+    const reviews = document.getElementById("reviews"),
       div = document.createElement("div");
     div.className = "reviews__testimonials";
     div.innerHTML = `
@@ -188,6 +67,8 @@ class UI {
             </blockquote>
           </article>
     `;
-    root.appendChild(div);
+    reviews.appendChild(div);
   }
 }
+
+export default UI;

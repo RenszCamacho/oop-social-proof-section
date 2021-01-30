@@ -1,14 +1,9 @@
 <img src="./src/imges/desktop-preview.jpg" alt="home-page" style="height: 100px; width:100px;" />
 
-## Link. 🔗
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/effa1710-7be2-4d26-b7d0-68337a0cdc16/deploy-status)](https://app.netlify.com/sites/social-fm/deploys)
-
-[Social Proof Section](https://social-fm.netlify.app/)
 
 # Social Card Section - Frontend Mentor Challenge.
 
-This is a Frontend Mentor Challenge, newbie-level. A cool challenge that I've really enjoyed it. Using Css Flex-box and some Css animation. Pure HTML, CSS.
+This is a Frontend Mentor Challenge, newbie-level. A cool challenge that I've really enjoyed it. Challenge developed with the object-oriented programming paradigm. Using Css Flex-box and some Css animation. Pure HTML, CSS.
 
 # Challenge Requirements.
 
@@ -31,8 +26,8 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 ### Install the dependencies
 
 ```bash
-git clone https://github.com/RenszCamacho/Social-Proof-Section
-cd Social-Proof-Section
+git clone https://github.com/RenszCamacho/oop-social-proof-section
+cd oop-social-proof-section
 ```
 
 ## Install the dependencies
@@ -64,6 +59,7 @@ This is deployed on Netlify.
 - ParcelJs(Bundler).
 - Sass(Css Pre-precesor).
 - Methodology/BEM(Css Especificity).
+- Object Oriented Programin - (Javascript - Paradigm).
 - Git and Github.
 
 ```

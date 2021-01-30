@@ -7,20 +7,18 @@ class UI {
           <article class="reviews__cards reviews__cards--one">
             <div class="reviews__cardWrapper reviews__cardWrapper--one">
               <img
-                src="./imges/image-colton.jpg"
-                alt="image-colton"
+                src="${user1.image}"
+                alt="${user1.fullName}"
                 class="reviews__cardsImg"
               />
               <h2 class="reviews__name">
-                <span class="reviews__subtitle">Colton Smith</span>
-                <span class="reviews__cardVerify">Verified Buyer</span>
+                <span class="reviews__subtitle">${user1.fullName}</span>
+                <span class="reviews__cardVerify">${user1.verified}</span>
               </h2>
             </div>
             <blockquote>
               <p class="reviews__cardDescription">
-                We needed the same printed design as the one we had ordered a
-                week prior. Not only did they find the original order, but we
-                also received it in time. Exellent!
+                ${user1.review}
               </p>
             </blockquote>
           </article>
@@ -28,20 +26,18 @@ class UI {
           <article class="reviews__cards reviews__cards--two">
             <div class="reviews__cardWrapper">
               <img
-                src="./imges/image-irene.jpg"
-                alt="image-colton"
+                src="${user2.image}"
+                alt="${user2.fullName}"
                 class="reviews__cardsImg"
               />
               <h2 class="reviews__name">
-                <span class="reviews__subtitle">Irene Roberts</span>
-                <span class="reviews__cardVerify">Verified Buyer</span>
+                <span class="reviews__subtitle">${user2.fullName}</span>
+                <span class="reviews__cardVerify">${user2.verified}</span>
               </h2>
             </div>
             <blockquote>
               <p class="reviews__cardDescription">
-                Customer service is always excellent and very quick turn around.
-                Completely delighted with the simplicity of the purchase and the
-                speed of delivery.
+                ${user2.review}
               </p>
             </blockquote>
           </article>
@@ -49,20 +45,18 @@ class UI {
           <article class="reviews__cards reviews__cards--three">
             <div class="reviews__cardWrapper">
               <img
-                src="./imges/image-anne.jpg"
-                alt="image-anne"
+                src="${user3.image}"
+                alt="${user3.fullName}"
                 class="reviews__cardsImg"
               />
               <h2 class="reviews__name">
-                <span class="reviews__subtitle">Anne Wallace</span>
-                <span class="reviews__cardVerify">Verified Buyer</span>
+                <span class="reviews__subtitle">${user3.fullName}</span>
+                <span class="reviews__cardVerify">${user3.verified}</span>
               </h2>
             </div>
             <blockquote>
               <p class="reviews__cardDescription">
-                Put an order with this company and can only praise them for the
-                very high standard. Will definitely use them again and recommend
-                them to everyone!
+                ${user3.review}
               </p>
             </blockquote>
           </article>
